@@ -57,6 +57,7 @@ app.use(Router.allowCrossOrigin);
 // ===============================
 Router.setRouter(express.Router());
 Router.register('/update', api.Update);
+Router.register('/status', api.Status);
 
 // prefix with /api
 app.use('/', Router.router);
