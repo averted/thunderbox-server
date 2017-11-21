@@ -1,0 +1,31 @@
+{
+  "name": "thunderbox-server",
+  "version": "1.1.2",
+  "description": "Thunderbox Status Server",
+  "main": "server.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "start:prod": "node build/server.js",
+    "start": "./node_modules/.bin/nodemon src/server.js --exec babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/averted/thunderbox-server.git"
+  },
+  "author": "Alexander Vitiuk <averted>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/averted/thunderbox-server/issues"
+  },
+  "homepage": "https://github.com/averted/thunderbox-server#readme",
+  "dependencies": {
+    "babel-cli": "6.24.1",
+    "babel-preset-env": "1.6.0",
+    "babel-preset-stage-1": "6.24.1",
+    "body-parser": "1.16.0",
+    "cookie-parser": "1.4.3",
+    "express": "4.14.0",
+    "morgan": "1.7.0",
+    "nodemon": "1.12.1"
+  }
+}

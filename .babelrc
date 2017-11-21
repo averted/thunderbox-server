@@ -1,0 +1,8 @@
+{
+  "presets": ["env", "stage-1"],
+  "env": {
+    "production": {
+      "presets": ["env", "stage-1"],
+    }
+  }
+}

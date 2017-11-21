@@ -1,0 +1,12 @@
+# node
+node_modules
+npm-debug.log
+
+# OS stuff
+.DS_Store
+Thumbs.db
+Desktop.ini
+.*.sw[a-z]
+
+# build
+build
