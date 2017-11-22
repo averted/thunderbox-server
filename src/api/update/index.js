@@ -5,22 +5,22 @@ export default {
    */
   get: function(req, res, next) {
     const state = req.app.get('state')
-    const status = !state.status
+    const available = !state.available
     const date = new Date()
-    const updatedState = { status, date }
+    const updatedState = { available, date }
 
     req.app.set('state', updatedState)
     return res.status(200).json(updatedState)
   },
 
   /**
-   * Update thunderbox status
+   * Update thunderbox available
    */
   post: function(req, res, next) {
     const state = req.app.get('state')
-    const status = !state.status
+    const available = !state.available
     const date = new Date()
-    const updatedState = { status, date }
+    const updatedState = { available, date }
 
     req.app.set('state', updatedState)
     return res.status(200).json(updatedState)

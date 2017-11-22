@@ -13,8 +13,8 @@ import api from './api'
 const app  = express();
 const port = process.env.PORT || 3020;
 const state = {
-  status: 0,
-  date: null
+  available: true,
+  date: new Date()
 }
 
 app.set('state', state);
