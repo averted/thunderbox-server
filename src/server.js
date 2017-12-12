@@ -8,6 +8,16 @@ import logger from 'morgan'
 import Router from './utils/router'
 import api from './api'
 
+const genEmptyGraph = () => {
+  const graph = {}
+
+  for (let i = 0; i < 24; i++) {
+    graph[i] = 0
+  }
+
+  return graph
+}
+
 // CONFIGS
 // ===============================
 const app  = express();
@@ -15,7 +25,7 @@ const port = process.env.PORT || 3020;
 const state = {
   available: true,
   date: new Date(),
-  graph: {}
+  graph: genEmptyGraph()
 }
 
 app.set('state', state);
