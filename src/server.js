@@ -14,7 +14,8 @@ const app  = express();
 const port = process.env.PORT || 3020;
 const state = {
   available: true,
-  date: new Date()
+  date: new Date(),
+  graph: {}
 }
 
 app.set('state', state);
