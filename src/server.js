@@ -18,6 +18,16 @@ const genEmptyGraph = () => {
   return graph
 }
 
+const genRandomGraph = () => {
+  const graph = {}
+
+  for (let i = 0; i < 24; i++) {
+    graph[i] = Math.floor(Math.random() * 30)
+  }
+
+  return graph
+}
+
 // CONFIGS
 // ===============================
 const app  = express();
